@@ -1,0 +1,36 @@
+{
+  "name": "swaphost",
+  "version": "0.0.5",
+  "description": "A simple nodeJS app that makes holding SWAP compos easy",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coral/swaphost.git"
+  },
+  "keywords": [
+    "swap",
+    "tracker",
+    "it",
+    "openmpt",
+    "monsquaz"
+  ],
+  "author": "Coral (jonas@jonasbengtson.se)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coral/swaphost/issues"
+  },
+  "homepage": "https://github.com/coral/swaphost#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "change-case": "^2.3.1",
+    "express": "^4.13.4",
+    "multer": "^1.1.0",
+    "node-uuid": "^1.4.7",
+    "pg": "^4.5.1",
+    "require-dir": "^0.3.0",
+    "socket.io": "^1.4.5"
+  }
+}

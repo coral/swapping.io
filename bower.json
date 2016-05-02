@@ -1,0 +1,31 @@
+{
+  "name": "swaphost",
+  "description": "A simple nodeJS app that makes holding SWAP compos easy",
+  "main": "run.js",
+  "authors": [
+    "Coral (jonas@jonasbengtson.se)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "swap",
+    "tracker",
+    "it",
+    "openmpt",
+    "monsquaz"
+  ],
+  "homepage": "https://github.com/coral/swaphost",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.5",
+    "lodash": "^4.6.1",
+    "jquery": "^2.2.1"
+  }
+}
