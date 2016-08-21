@@ -10,7 +10,7 @@ var multer = require('multer');
 
 var upload = multer({dest: 'data/'});
 
-var config = require('../config/server');
+var config = require('config');
 
 var io = null;
 var server = null;
@@ -24,7 +24,7 @@ exports.start = function()
     app.use('/', express.static('static'));
     app.use('/components', express.static("bower_components"));
 
-    require('../app/routes/index')(app);
+    require('../routes/index')(app);
 
     // Error handler
     app.use(function(err, req, res, next) {
@@ -43,5 +43,5 @@ exports.start = function()
 
     var server = require('http').createServer(app);
 
-    server.listen(config.port);
+    server.listen(config.get('server.port'));
 }
